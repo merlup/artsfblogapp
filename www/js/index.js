@@ -21,8 +21,8 @@ var app = {
     initialize: function() {
         this.bindEvents();
 
-        // var apiRoot = 'http://artsfblogserver1.herokuapp.com/';
-        var apiRoot = 'http://elocal.ngrok.io/';
+        var apiRoot = 'http://artsfblogserver1.herokuapp.com/';
+        // var apiRoot = 'http://elocal.ngrok.io/';
         
 
         $.ajax({
