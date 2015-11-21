@@ -40,7 +40,11 @@ var app = {
 
                 // add results to list
                 listResult.forEach(function(item){
-                    $('#merlindata').append('<div>'+ item.name +'</div>');
+                    var template =  '';
+                    template += '<div>'+ item.name +'</div>';
+                    template += '<div><img src="'+ item.url +'" /></div>';
+                    template += '<br /><br />';
+                    $('#merlindata').append(template);
                 });
 
             }
