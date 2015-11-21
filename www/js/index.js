@@ -21,8 +21,8 @@ var app = {
     initialize: function() {
         this.bindEvents();
 
-        var apiRoot = 'http://artsfblogserver1.herokuapp.com/';
-        // var apiRoot = 'http://elocal.ngrok.io/';
+        // var apiRoot = 'http://artsfblogserver1.herokuapp.com/';
+        var apiRoot = 'http://elocal.ngrok.io/';
         
 
         $.ajax({
@@ -34,7 +34,7 @@ var app = {
             success: function(listResult){
                 console.log(listResult);
                 if(!listResult || !listResult.length){
-                    alert('whooops3');
+                    console.error('FAiled to get any results');
                     return;
                 }
 
